@@ -1,0 +1,18 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: jwt-backend-example
+  datasource:
+    username: postgres
+    password: 12345
+    url: jdbc:postgresql://localhost:5432/local_db
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+    generate-ddl: false
